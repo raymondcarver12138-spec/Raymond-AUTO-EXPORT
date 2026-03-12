@@ -64,14 +64,9 @@ export default function Layout({ children }: { children: ReactNode }) {
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-2">
                 <img src="https://duk.tw/cqQcgp.png" alt="MOVA Auto Export Guangzhou" className="h-6 sm:h-8 md:h-10 w-auto" referrerPolicy="no-referrer" />
-                <div className="flex flex-col">
-                  <span className="font-bold text-sm sm:text-base md:text-lg leading-tight tracking-tight">
-                    MOVA Auto Export Guangzhou
-                  </span>
-                  <span className="text-[10px] text-zinc-500 font-medium">
-                    {t('common.memberOf')}
-                  </span>
-                </div>
+                <span className="font-bold text-sm sm:text-base md:text-lg leading-tight tracking-tight">
+                  Auto Export Guangzhou
+                </span>
               </Link>
             </div>
 
