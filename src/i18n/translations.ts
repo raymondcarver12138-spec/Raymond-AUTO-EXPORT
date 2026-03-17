@@ -29,6 +29,7 @@ export const translations = {
       company: '公司名称',
       vin: '车架号 (VIN)',
       message: '咨询内容 *',
+      attachment: '上传附件/图片',
       close: '关闭',
       memberOf: 'Member of Mova-Tech',
     },
@@ -67,7 +68,9 @@ export const translations = {
         '新能源': '新能源',
         'SUV': 'SUV',
         '轿车': '轿车',
-        'MPV': 'MPV'
+        'MPV': 'MPV',
+        '二手车': '二手车',
+        '右舵车': '右舵车'
       }
     },
     autoParts: {
@@ -146,6 +149,7 @@ export const translations = {
       company: 'Company Name',
       vin: 'VIN (Vehicle Identification Number)',
       message: 'Message *',
+      attachment: 'Upload Attachment/Images',
       close: 'Close',
       memberOf: 'Member of Mova-Tech',
     },
@@ -184,7 +188,9 @@ export const translations = {
         '新能源': 'NEV',
         'SUV': 'SUV',
         '轿车': 'Sedan',
-        'MPV': 'MPV'
+        'MPV': 'MPV',
+        '二手车': 'Used Cars',
+        '右舵车': 'RHD'
       }
     },
     autoParts: {

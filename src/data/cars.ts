@@ -66,6 +66,7 @@ export const cars = [
     mileage: "0 km",
     fuelType: { zh: "汽油/新能源", en: "Gasoline/NEV" },
     image: "https://storage.meteor.today/image/69b1433cc75c658163284517.jpg",
+    images: ["https://storage.meteor.today/image/69b1433cc75c658163284517.jpg", "https://duk.tw/kg2i8P.jpg"],
     specs: {
       zh: {
         "品牌": "长安 (Changan)",
@@ -245,6 +246,112 @@ export const cars = [
     features: {
       zh: ["弹匣电池系统安全技术", "星灵架构", "超大空间", "ADiGO智驾互联"],
       en: ["Magazine Battery Safety", "Star Soul Architecture", "Spacious", "ADiGO Smart Drive"]
+    }
+  },
+  {
+    id: "c10",
+    name: "Livan 8 (吉利睿蓝8)",
+    type: { zh: "右舵车", en: "RHD" },
+    price: "Contact for Quote",
+    year: "2024",
+    mileage: "0 km",
+    fuelType: { zh: "纯电动", en: "EV" },
+    image: "https://duk.tw/w2lpXZ.jpg",
+    images: ["https://duk.tw/w2lpXZ.jpg", "https://duk.tw/fvpi0Y.jpg"],
+    specs: {
+      zh: {
+        "品牌": "睿蓝 (Livan)",
+        "车型": "睿蓝8",
+        "动力类型": "纯电动 (EV)"
+      },
+      en: {
+        "Brand": "Livan",
+        "Models": "Livan 8",
+        "Powertrain": "EV"
+      }
+    },
+    features: {
+      zh: ["右舵版", "纯电 MPV", "智能座舱"],
+      en: ["RHD", "EV MPV", "Smart Cabin"]
+    }
+  },
+  {
+    id: "c11",
+    name: "Riddara RD6 Pickup (雷达 RD6 皮卡)",
+    type: { zh: "右舵车", en: "RHD" },
+    price: "Contact for Quote",
+    year: "2024",
+    mileage: "0 km",
+    fuelType: { zh: "纯电动", en: "EV" },
+    image: "https://duk.tw/wjtG8H.png",
+    images: ["https://duk.tw/wjtG8H.png", "https://duk.tw/u3bKJ3.png"],
+    specs: {
+      zh: {
+        "品牌": "雷达 (Riddara)",
+        "车型": "RD6",
+        "动力类型": "纯电动 (EV)"
+      },
+      en: {
+        "Brand": "Riddara",
+        "Models": "RD6",
+        "Powertrain": "EV"
+      }
+    },
+    features: {
+      zh: ["右舵版", "纯电皮卡", "外放电功能", "宽敞装载空间"],
+      en: ["RHD", "EV Pickup", "V2L Tech", "Spacious Bed"]
+    }
+  },
+  {
+    id: "c12",
+    name: "Deepal L Series (深蓝 L系列)",
+    type: { zh: "新能源", en: "NEV" },
+    price: "Contact for Quote",
+    year: "2024",
+    mileage: "0 km",
+    fuelType: { zh: "纯电/增程", en: "EV/EREV" },
+    image: "https://duk.tw/YqhEkA.webp",
+    specs: {
+      zh: {
+        "品牌": "深蓝 (Deepal)",
+        "车型": "L系列 (L07等)",
+        "动力类型": "纯电/增程"
+      },
+      en: {
+        "Brand": "Deepal",
+        "Models": "L Series (L07, etc.)",
+        "Powertrain": "EV/EREV"
+      }
+    },
+    features: {
+      zh: ["超级增程", "智能座舱", "无框车门"],
+      en: ["Super EREV", "Smart Cabin", "Frameless Doors"]
+    }
+  },
+  {
+    id: "c13",
+    name: "Deepal S Series (深蓝 S系列)",
+    type: { zh: "新能源", en: "NEV" },
+    price: "Contact for Quote",
+    year: "2024",
+    mileage: "0 km",
+    fuelType: { zh: "纯电/增程", en: "EV/EREV" },
+    image: "https://duk.tw/zt9Etr.webp",
+    specs: {
+      zh: {
+        "品牌": "深蓝 (Deepal)",
+        "车型": "S系列 (S07等)",
+        "动力类型": "纯电/增程"
+      },
+      en: {
+        "Brand": "Deepal",
+        "Models": "S Series (S07, etc.)",
+        "Powertrain": "EV/EREV"
+      }
+    },
+    features: {
+      zh: ["超级增程", "智能舒享空间", "科技运动前脸"],
+      en: ["Super EREV", "Comfort Space", "Tech-Sport Front"]
     }
   }
 ];

@@ -12,6 +12,7 @@ import {
 import { cars } from "../data/cars";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useState, useEffect } from "react";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Home() {
   const featuredCars = cars.slice(0, 3);
@@ -284,14 +285,9 @@ export default function Home() {
                 key={car.id}
                 className="bg-white rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-all group"
               >
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={car.image}
-                    alt={car.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-zinc-900">
+                <div className="relative h-64 overflow-hidden z-0">
+                  <ImageSlider images={(car as any).images || [car.image]} alt={car.name} className="group-hover:scale-105 transition-transform duration-500 z-0" />
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-zinc-900 pointer-events-none z-10">
                     {(car.type as any)[language] || car.type.zh}
                   </div>
                 </div>
@@ -323,7 +319,7 @@ export default function Home() {
                     </div>
                     <Link
                       to={`/inventory?car=${car.id}`}
-                      className="text-sm font-medium text-zinc-900 hover:text-blue-600 transition-colors"
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors"
                     >
                       {t('common.details')}
                     </Link>

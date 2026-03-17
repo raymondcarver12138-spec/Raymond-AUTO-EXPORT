@@ -75,7 +75,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  className={`text-sm font-medium transition-colors hover:text-blue-600 whitespace-nowrap shrink-0 ${
                     location.pathname === link.path
                       ? "text-blue-600"
                       : "text-zinc-600"
@@ -87,14 +87,14 @@ export default function Layout({ children }: { children: ReactNode }) {
               <div className="flex items-center space-x-4 border-l border-zinc-200 pl-6">
                 <button 
                   onClick={() => setLanguage(language === 'zh' ? 'en' : 'zh')}
-                  className="flex items-center px-4 py-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-bold transition-colors shadow-sm border border-zinc-200"
+                  className="flex items-center px-4 py-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-bold transition-colors shadow-sm border border-zinc-200 whitespace-nowrap shrink-0"
                 >
                   <Globe className="w-5 h-5 mr-2 text-blue-600" />
                   {language === 'zh' ? 'English' : '中文'}
                 </button>
                 <Link
                   to="/contact"
-                  className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm"
+                  className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm whitespace-nowrap shrink-0"
                 >
                   {t('nav.getQuote')}
                 </Link>

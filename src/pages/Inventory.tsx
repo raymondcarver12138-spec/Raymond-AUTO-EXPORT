@@ -10,6 +10,7 @@ import {
 import { cars } from "../data/cars";
 import { useLanguage } from "../contexts/LanguageContext";
 import SendOptionsModal from "../components/SendOptionsModal";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Inventory() {
   const location = useLocation();
@@ -116,7 +117,7 @@ ${formData.requirements || 'None'}`;
         <div className="bg-white p-4 rounded-2xl border border-zinc-200 mb-8 flex flex-col gap-4 shadow-sm">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
             <div className="flex items-center space-x-2 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0">
-              {["全部", "全系", "新能源", "SUV", "轿车", "MPV"].map((type) => (
+              {["全部", "全系", "新能源", "SUV", "轿车", "MPV", "二手车", "右舵车"].map((type) => (
                 <button
                   key={type}
                   onClick={() => setFilterType(type)}
@@ -178,14 +179,9 @@ ${formData.requirements || 'None'}`;
               animate={{ opacity: 1, scale: 1 }}
               className="bg-white rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-all flex flex-col"
             >
-              <div className="relative h-64 overflow-hidden bg-zinc-100">
-                <img
-                  src={car.image}
-                  alt={car.name}
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-zinc-900">
+              <div className="relative h-64 overflow-hidden bg-zinc-100 z-0">
+                <ImageSlider images={(car as any).images || [car.image]} alt={car.name} />
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-zinc-900 pointer-events-none z-10">
                   {(car.type as any)[language] || car.type.zh}
                 </div>
               </div>
@@ -260,13 +256,8 @@ ${formData.requirements || 'None'}`;
 
               {/* Car Details Side */}
               <div className="w-full md:w-1/2 bg-zinc-50 overflow-y-auto border-r border-zinc-200">
-                <div className="h-64 md:h-72 relative">
-                  <img
-                    src={selectedCar.image}
-                    alt={selectedCar.name}
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
+                <div className="h-64 md:h-72 relative z-0">
+                  <ImageSlider images={(selectedCar as any).images || [selectedCar.image]} alt={selectedCar.name} className="z-0" />
                 </div>
                 <div className="p-6 md:p-8">
                   <h2 className="text-2xl font-bold text-zinc-900 mb-2">

@@ -1,6 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "motion/react";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Paperclip } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import SendOptionsModal from "../components/SendOptionsModal";
 
@@ -13,6 +13,7 @@ export default function Contact() {
     phone: "",
     email: "",
     vin: "",
+    attachmentName: "",
     message: "",
   });
 
@@ -20,6 +21,12 @@ export default function Contact() {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      setFormData({ ...formData, attachmentName: e.target.files[0].name });
+    }
   };
 
   const handleSubmit = (e: FormEvent) => {
@@ -34,6 +41,7 @@ Company: ${formData.company || 'N/A'}
 Phone: ${formData.phone}
 Email: ${formData.email}
 VIN: ${formData.vin || 'N/A'}
+Attachment: ${formData.attachmentName ? formData.attachmentName + ' (Sent Separately)' : 'None'}
 
 Message:
 ${formData.message}`;
@@ -210,6 +218,24 @@ ${formData.message}`;
                     className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
                     placeholder="17-character VIN"
                   />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-zinc-700 mb-2">
+                    {t('common.attachment')}
+                  </label>
+                  <label className="flex items-center justify-center w-full px-4 py-3 bg-zinc-50 border border-zinc-200 border-dashed rounded-xl hover:bg-zinc-100 hover:border-blue-400 transition-all cursor-pointer">
+                    <input
+                      type="file"
+                      className="hidden"
+                      onChange={handleFileChange}
+                      accept="image/*,.pdf,.doc,.docx"
+                    />
+                    <Paperclip className="w-5 h-5 text-zinc-400 mr-2" />
+                    <span className="text-zinc-600 text-sm truncate max-w-full">
+                      {formData.attachmentName || t('common.attachment')}
+                    </span>
+                  </label>
                 </div>
 
                 <div>
