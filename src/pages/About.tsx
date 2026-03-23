@@ -7,9 +7,9 @@ export default function About() {
   const { t } = useLanguage();
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "https://duk.tw/KFlDeR.png",
-    "https://duk.tw/Ur0s5w.jpg",
-    "https://duk.tw/Vpd0AN.jpg"
+    "https://i.ibb.co/qLkJgCBD/c8897b3c35e5b0afa417e09003d00405.png",
+    "https://i.ibb.co/V0YLBbh3/downloaded-image.jpg",
+    "https://i.ibb.co/7Jx5gzJ9/f-Nm-GEA0-XR.jpg"
   ];
 
   useEffect(() => {

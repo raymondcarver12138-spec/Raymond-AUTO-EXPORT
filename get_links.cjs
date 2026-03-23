@@ -1,14 +1,8 @@
 const https = require('https');
 const urls = [
-  'https://ibb.co/FNx7pC0',
-  'https://ibb.co/CsNY83cJ',
-  'https://ibb.co/R1Gh2Vr',
-  'https://ibb.co/qK5ksTf',
-  'https://ibb.co/0jcfy30d',
-  'https://ibb.co/ccwz4L9K',
-  'https://ibb.co/JF59t72J',
-  'https://ibb.co/5mm0kfY',
-  'https://ibb.co/7dJN9wBZ'
+  'https://ibb.co/gbz4Wdyr',
+  'https://ibb.co/RGTgHtM7',
+  'https://ibb.co/SXD8QxXL'
 ];
 
 Promise.all(urls.map(url => new Promise(resolve => {
