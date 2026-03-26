@@ -353,5 +353,40 @@ export const cars = [
       zh: ["超级增程", "智能舒享空间", "科技运动前脸"],
       en: ["Super EREV", "Comfort Space", "Tech-Sport Front"]
     }
+  },
+  {
+    id: "c14",
+    name: "Toyota Corolla E-Hybrid (丰田 卡罗拉双擎)",
+    type: { zh: "二手车", en: "Used Car" },
+    price: "Contact for Quote",
+    year: "2023",
+    mileage: "Contact for details",
+    fuelType: { zh: "油电混合 (HEV)", en: "HEV" },
+    image: "https://duk.tw/uuop4O.jpg",
+    images: [
+      "https://duk.tw/uuop4O.jpg",
+      "https://duk.tw/Oblabh.jpg",
+      "https://duk.tw/6m4QkW.jpg",
+      "https://duk.tw/vD169o.jpg",
+      "https://duk.tw/RsHw0f.jpg"
+    ],
+    specs: {
+      zh: {
+        "品牌": "丰田 (Toyota)",
+        "车型": "2023款 卡罗拉双擎 1.8 无级 智能电混先锋版",
+        "变速箱": "自动挡 (CVT)",
+        "动力类型": "油电混合 (HEV)"
+      },
+      en: {
+        "Brand": "Toyota",
+        "Models": "2023 Corolla 1.8 E-Hybrid Pioneer CVT",
+        "Transmission": "CVT",
+        "Powertrain": "HEV"
+      }
+    },
+    features: {
+      zh: ["智能电混", "经济省油", "先锋版配置", "可靠耐用"],
+      en: ["Smart E-Hybrid", "Fuel Efficient", "Pioneer Edition", "Reliable & Durable"]
+    }
   }
 ];
