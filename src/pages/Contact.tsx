@@ -104,7 +104,7 @@ ${formData.message}`;
                     <p className="text-zinc-600 text-sm">
                       WhatsApp: +44 7709967348
                       <br />
-                      WeChat: +86 19107644797
+                      WeChat: +86 17665452032
                     </p>
                   </div>
                 </div>

@@ -42,7 +42,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center space-x-6">
             <span className="flex items-center">
-              <Phone className="w-3 h-3 mr-2" /> WeChat: +86 19107644797
+              <Phone className="w-3 h-3 mr-2" /> WeChat: +86 17665452032
             </span>
             <span className="flex items-center">
               <Phone className="w-3 h-3 mr-2" /> WhatsApp: +44 7709967348
@@ -228,7 +228,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 </li>
                 <li className="flex items-center">
                   <Phone className="w-4 h-4 mr-2 shrink-0" />
-                  <span>WeChat: +86 19107644797</span>
+                  <span>WeChat: +86 17665452032</span>
                 </li>
                 <li className="flex items-center">
                   <Phone className="w-4 h-4 mr-2 shrink-0" />
