@@ -388,5 +388,38 @@ export const cars = [
       zh: ["智能电混", "经济省油", "先锋版配置", "可靠耐用"],
       en: ["Smart E-Hybrid", "Fuel Efficient", "Pioneer Edition", "Reliable & Durable"]
     }
+  },
+  {
+    id: "c15",
+    name: "Geely Binyue L (吉利缤越L)",
+    type: { zh: "SUV", en: "SUV" },
+    price: "Contact for Quote",
+    year: "2025-2026",
+    mileage: "0 km",
+    fuelType: { zh: "汽油 (Gasoline)", en: "Gasoline" },
+    image: "https://duk.tw/TlMN0t.png",
+    images: [
+      "https://duk.tw/TlMN0t.png",
+      "https://duk.tw/1Gw0Jh.png",
+      "https://duk.tw/EpEBzu.jpg",
+      "https://duk.tw/buOZT6.jpg",
+      "https://duk.tw/u0dyl2.jpg"
+    ],
+    specs: {
+      zh: {
+        "品牌": "吉利 (Geely)",
+        "车型": "缤越L",
+        "动力类型": "燃油"
+      },
+      en: {
+        "Brand": "Geely",
+        "Models": "Binyue L",
+        "Powertrain": "Gasoline"
+      }
+    },
+    features: {
+      zh: ["全新动感设计", "强劲动力输出", "智能互联座舱", "宽敞灵活空间"],
+      en: ["Dynamic Design", "Strong Power Output", "Smart Connected Cabin", "Spacious Flex Space"]
+    }
   }
 ];
