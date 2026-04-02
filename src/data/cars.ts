@@ -454,5 +454,36 @@ export const cars = [
       zh: ["先锋设计", "智能座舱", "高性能驱动", "宽适空间"],
       en: ["Avant-garde Design", "Smart Cabin", "High-Performance Drive", "Spacious Interior"]
     }
+  },
+  {
+    id: "c17",
+    name: "Changan Qiyuan Q05 (长安启源Q05)",
+    type: { zh: "SUV", en: "SUV" },
+    price: "Contact for Quote",
+    year: "2023-2026",
+    mileage: "0 km",
+    fuelType: { zh: "插电混动 (PHEV)", en: "PHEV" },
+    image: "https://duk.tw/5z5amQ.jpg",
+    images: [
+      "https://duk.tw/5z5amQ.jpg",
+      "https://duk.tw/R3KgOm.jpg",
+      "https://duk.tw/ocTujl.jpg"
+    ],
+    specs: {
+      zh: {
+        "品牌": "长安 (Changan)",
+        "车型": "启源Q05",
+        "动力类型": "插电混动 (PHEV)"
+      },
+      en: {
+        "Brand": "Changan",
+        "Models": "Qiyuan Q05",
+        "Powertrain": "PHEV"
+      }
+    },
+    features: {
+      zh: ["数智电驱", "超低油耗", "舒适座舱", "智能安全"],
+      en: ["Smart Electric Drive", "Ultra-low Fuel Consump.", "Comfort Cabin", "Smart Safety"]
+    }
   }
 ];
