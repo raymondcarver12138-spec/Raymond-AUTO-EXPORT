@@ -31,7 +31,7 @@ export const cars = [
     id: "c2",
     name: "Li Auto International (理想国际版全系)",
     type: { zh: "新能源", en: "NEV" },
-    price: "EXW $36,000 - $67,000",
+    price: "Contact for Quote",
     year: "2025-2026",
     mileage: "0 km",
     fuelType: { zh: "增程式 (EREV)", en: "EREV" },
@@ -420,6 +420,39 @@ export const cars = [
     features: {
       zh: ["全新动感设计", "强劲动力输出", "智能互联座舱", "宽敞灵活空间"],
       en: ["Dynamic Design", "Strong Power Output", "Smart Connected Cabin", "Spacious Flex Space"]
+    }
+  },
+  {
+    id: "c16",
+    name: "Zeekr 9x (极氪9x)",
+    type: { zh: "新能源", en: "NEV" },
+    price: "Contact for Quote",
+    year: "2025-2026",
+    mileage: "0 km",
+    fuelType: { zh: "纯电动 (EV)", en: "EV" },
+    image: "https://duk.tw/BoQ5c3.png",
+    images: [
+      "https://duk.tw/BoQ5c3.png",
+      "https://duk.tw/sjF0No.png",
+      "https://duk.tw/R2eMAx.webp",
+      "https://duk.tw/9fCYC7.webp",
+      "https://duk.tw/PoBPKz.webp"
+    ],
+    specs: {
+      zh: {
+        "品牌": "极氪 (Zeekr)",
+        "车型": "极氪9x",
+        "动力类型": "纯电动 (EV)"
+      },
+      en: {
+        "Brand": "Zeekr",
+        "Models": "Zeekr 9x",
+        "Powertrain": "EV"
+      }
+    },
+    features: {
+      zh: ["先锋设计", "智能座舱", "高性能驱动", "宽适空间"],
+      en: ["Avant-garde Design", "Smart Cabin", "High-Performance Drive", "Spacious Interior"]
     }
   }
 ];
