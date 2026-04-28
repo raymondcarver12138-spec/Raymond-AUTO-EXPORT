@@ -557,5 +557,94 @@ export const cars = [
       zh: ["无里程焦虑", "空间魔术师 (纯平后备箱)", "50W无线快充", "6kW V2L外放电"],
       en: ["No Range Anxiety", "Magic Flat Trunk Space", "50W Fast Wireless Charge", "6kW V2L Output"]
     }
+  },
+  {
+    id: "c20",
+    name: "DongFeng Nammi 06 (东风纳米06)",
+    type: { zh: "右舵车", en: "RHD" },
+    price: "Contact for Quote",
+    year: "2025-2026",
+    mileage: "0 km",
+    fuelType: { zh: "纯电动 (EV)", en: "EV" },
+    image: "https://duk.tw/Udhe7u.jpg",
+    images: [
+      "https://duk.tw/Udhe7u.jpg"
+    ],
+    specs: {
+      zh: {
+        "品牌": "东风纳米 (DongFeng Nammi)",
+        "车型": "06",
+        "动力类型": "纯电动 (EV)"
+      },
+      en: {
+        "Brand": "DongFeng Nammi",
+        "Models": "06",
+        "Powertrain": "EV"
+      }
+    },
+    features: {
+      zh: ["右舵版", "精巧设计", "智能代步"],
+      en: ["RHD", "Compact Design", "Smart Commute"]
+    }
+  },
+  {
+    id: "c21",
+    name: "Zeekr X / 009 / 7X (极氪 X / 009 / 7X)",
+    type: { zh: "右舵车", en: "RHD" },
+    price: "Contact for Quote",
+    year: "2025-2026",
+    mileage: "0 km",
+    fuelType: { zh: "纯电动 (EV)", en: "EV" },
+    image: "https://duk.tw/22thqe.jpg",
+    images: [
+      "https://duk.tw/22thqe.jpg",
+      "https://duk.tw/FH2rBt.jpg"
+    ],
+    specs: {
+      zh: {
+        "品牌": "极氪 (Zeekr)",
+        "车型": "X / 009 / 7X",
+        "动力类型": "纯电动 (EV)"
+      },
+      en: {
+        "Brand": "Zeekr",
+        "Models": "X / 009 / 7X",
+        "Powertrain": "EV"
+      }
+    },
+    features: {
+      zh: ["右舵版", "极氪家族", "豪华纯电"],
+      en: ["RHD", "Zeekr Family", "Luxury EV"]
+    }
+  },
+  {
+    id: "c22",
+    name: "SKYWORTH K (创维 K)",
+    type: { zh: "右舵车", en: "RHD" },
+    price: "Contact for Quote",
+    year: "2025-2026",
+    mileage: "0 km",
+    fuelType: { zh: "纯电动 (EV)", en: "EV" },
+    image: "https://duk.tw/YaWgOw.jpg",
+    images: [
+      "https://duk.tw/YaWgOw.jpg",
+      "https://duk.tw/3nHUxl.jpg"
+    ],
+    specs: {
+      zh: {
+        "品牌": "创维 (SKYWORTH)",
+        "车型": "K",
+        "动力类型": "纯电动 (EV)"
+      },
+      en: {
+        "Brand": "SKYWORTH",
+        "Models": "K",
+        "Powertrain": "EV"
+      }
+    },
+    features: {
+      zh: ["右舵版", "健康座舱", "家用纯电SUV"],
+      en: ["RHD", "Health Cabin", "Family EV SUV"]
+    }
   }
 ];
